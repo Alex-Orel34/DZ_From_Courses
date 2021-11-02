@@ -1,5 +1,3 @@
-from typing import NoReturn
-
 
 def Get_sm(n):
     return n * 2.54
