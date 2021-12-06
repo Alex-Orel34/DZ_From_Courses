@@ -1,0 +1,4 @@
+06/12/21 22:59:46 - None None, 25 min, pause 5 min, 4 cycles, None 
+06/12/21 23:04:01 - Alex Orlovich, 3 min, pause 1 min, 3 cycles, Game 
+06/12/21 23:07:05 - Alex Orlovich, 3 min, pause 1 min, 3 cycles, Game 
+06/12/21 23:09:45 - Alex Orlovich, 3 min, pause 1 min, 2 cycles, Game 
