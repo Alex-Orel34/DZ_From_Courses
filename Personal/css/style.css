@@ -1,0 +1,140 @@
+*,
+::before,
+::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserral', sans-serif;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+.header{
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: burlywood;
+}
+
+.header_logo{
+  color: inherit;
+  text-decoration: none;
+}
+.hero{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hero_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 20px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.htitle{
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+.subtitle{
+  font-size: 32px;
+  font-weight: 400;
+}
+.links{
+  display: flex;
+}
+.my_link{
+  margin-right: 10px;
+  font-size: 30px;
+  color: black;
+  transition: color 0.3s;
+}
+.my_link:hover{
+  color: aquamarine;
+}
+
+.box{
+  max-width: 500px;
+  justify-self: center;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  border: 10px solid #fff;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  animation: ava-animate 5s infinite alternate;
+}
+.box-img{
+  animation: ava-bg 3s infinite alternate;
+}
+@media screen and (max-width: 978px){
+  .hero{
+    padding-top: 30px;
+  }
+  .hero_container{
+    grid-row-gap:20px
+  }
+  .htitle{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .subtitle{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .description{
+    font-size: 14px;
+  }
+  .about{
+    text-align: center;
+  }
+  .my_link{
+    justify-content: center;
+  }
+  .box{
+    max-width: 350px;
+
+  }
+}
+@keyframes ava-animate {
+  0%{
+    border-radius: 27% 73% 48% 52% / 17% 38% 62% 83%;
+  }
+  40%{
+    border-radius: 61% 39% 69% 31% / 51% 59% 41% 49%;
+  }
+  60%{
+    border-radius: 40% 60% 23% 77% / 24% 49% 51% 76%;
+  }
+  100%{
+    border-radius: 28% 72% 56% 44% / 71% 26% 74% 29%;
+  }
+}
+
+@keyframes ava-bg {
+  from{
+    backdrop-filter: hue-rotate(0);
+  }
+  to{
+    backdrop-filter: hue-rotate(90deg);
+  }
+}
